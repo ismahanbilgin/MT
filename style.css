@@ -1,0 +1,44 @@
+/* style.css */
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #f1f8e9;
+}
+
+#gameArea {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 2px solid #558b2f;
+  background: #dcedc8;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #ff7043;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+#modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: white;
+  padding: 20px;
+  border: 2px solid #8bc34a;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
+}

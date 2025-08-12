@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kutuya Tıkla!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kutuya Tıkla!</h1>
+  <p>Skor: <span id="score">0</span></p>
+  <p>Kalan Süre: <span id="time">30</span> saniye</p>
+  <div id="gameArea"></div>
+
+  <div id="modal" class="hidden">
+    <h2>Oyun Bitti!</h2>
+    <p>Toplam Skor: <span id="finalScore"></span></p>
+    <button onclick="restartGame()">Yeniden Oyna</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
